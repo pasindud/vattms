@@ -26,7 +26,7 @@ if(!empty($_SESSION['LoggedIn']) && !empty($_SESSION['Username']))
 	$userid3="1";
 	$status="1";
 	
-	$reg_query="INSERT INTO `vatwa`.`log` (`id`, `insid`, `insreport`, `studentid`, `date`, `time`, `facility`, `status`, `req_date`) VALUES (NULL,NULL, NULL, '".$_SESSION['id']." ', ' ".$date." ', ' ".$time." ' , ' ".$facility." ', ' ".$status." ' , CURRENT_TIMESTAMP) ";
+	$reg_query="INSERT INTO `log` (`id`, `insid`, `insreport`, `studentid`, `date`, `time`, `facility`, `status`, `req_date`) VALUES (NULL,NULL, NULL, '".$_SESSION['id']." ', ' ".$date." ', ' ".$time." ' , ' ".$facility." ', ' ".$status." ' , CURRENT_TIMESTAMP) ";
 	$ext_query = mysql_query($reg_query) or die(mysql_error(   ) ); 
 
     	echo "1";

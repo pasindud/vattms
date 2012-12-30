@@ -20,7 +20,7 @@ $id = trim(mysql_real_escape_string($_GET["id"]));
 									 $datagg2 = mysql_query($query2) or die(mysql_error()); 
 								     $info3 = mysql_fetch_array( $datagg2 ); 
 
-									 $data2="UPDATE `vatwa`.`log` SET `insid` = ' " .$info3['UserID'] ." ',`status` = '2' WHERE `log`.`id` =".$id ;
+									 $data2="UPDATE `log` SET `insid` = ' " .$info3['UserID'] ." ',`status` = '2' WHERE `log`.`id` =".$id ;
 									 $datagg1= mysql_query($data2) or die(mysql_error()); 
 
 									 $query = "SELECT * FROM  `log`  WHERE   `id`=".$id  ; 
