@@ -1,6 +1,6 @@
 <?php
 /**
- * @Author Pasindu De Silav
+ * @Author Pasindu De Silva
  * @license  GNU Affero General Public License http://www.gnu.org/licenses/ 
  *
  * 
