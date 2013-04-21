@@ -40,18 +40,18 @@ if (isset($type) && isset($datatype)) {
     for ($i = 1; $i < sizeof($client); $i++) {
 	
 		$data_arrary = array();
-													for ($e = 0; $e < 41; $e++) {
-															$data_arrary[$e]=$client[$i][$i][$e];
-													}		
+		for ($e = 0; $e < 41; $e++) {
+				$data_arrary[$e]=$client[$i][$i][$e];
+		}		
 										
-					if($type=='json')
-					{	
-							unset($arry);
-								for ($e = 0; $e < 41; $e++) {
-									$arry[]=array(	$client_arrary[$e] =>	$data_arrary[$e]);
-								}	
+		if($type=='json')
+		{	
+					unset($arry);
+				for ($e = 0; $e < 41; $e++) {
+					$arry[]=array(	$client_arrary[$e] =>	$data_arrary[$e]);
+				}	
 
-							$marks []= $arry ;
+					$marks []= $arry ;
 		
         } else
 		{
